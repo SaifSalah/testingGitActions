@@ -1,0 +1,9 @@
+name: CI
+
+on: push
+
+jobs:
+  runs-on: ubutnu-latest
+  setps:
+    - name: Install firebase tools 🔥🔨
+      run: yarn global add firebase-tools
