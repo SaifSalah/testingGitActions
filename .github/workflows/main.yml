@@ -6,5 +6,4 @@ jobs:
   test:
     runs-on: ubutnu-latest
     setps:
-      - name: Install firebase tools 🔥🔨
-        run: yarn global add firebase-tools
+      - run: yarn global add firebase-tools
