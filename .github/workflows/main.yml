@@ -3,8 +3,6 @@ on: [push]
 jobs:
   firebaseGetGoogleServices:
     runs-on: ubuntu-latest
-    env:
-      FIREBASE_PROJECT: "${{ github.event.inputs.firebaseProject }}"
     steps:
       - name: Check out repository 🗿
         uses: actions/checkout@v2
@@ -13,6 +11,6 @@ jobs:
           node-version: "14"
       - name: Install firebase tools 🔥🔨
         run: yarn global add firebase-tools
-      - name: export env varibles from local
-        run: export $(grep -v '^#' .env | xargs) 
-      - run: echo $FIREBASE_PROJECT && $FIREBASE_TOKEN && $firebaseProjectName
+      # - name: export env varibles from local
+      #   run: if [ ! -f .env ] then  export $(cat .env | xargs) fi
+      - run: cat .env
