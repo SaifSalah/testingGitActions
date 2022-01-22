@@ -13,6 +13,4 @@ jobs:
       #     node-version: "14"
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
-      - name: read from env file
-        run : echo ${{ secrets.FIREBASE_TOKEN }}
-      - run : cd android && echo ${{ secrets.FIREBASE_TOKEN }} >> saif.txt && cat saif.txt
+      - run: cd android && echo ${{ secrets.FIREBASE_TOKEN }} >> saif.txt && cat saif.txt
