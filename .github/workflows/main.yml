@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - name: Install firebase tools 🔥🔨
-        run: yarn global add firebase-tools
-      - run : pwd && cd .. && ls
+      # - name: Install firebase tools 🔥🔨
+      #   run: yarn global add firebase-tools
+      - run : ls /home/runner/work/testingGitActions
