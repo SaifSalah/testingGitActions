@@ -12,5 +12,7 @@ jobs:
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
       - run: export $(cat .env >> ~/.bashrc | xargs)
-      - run: cat ~/.bashrc
-      - run: cd android && echo $FIREBASE_PROJECT >> saif.txt && cat saif.txt
+      - name: Get Env Vars🔥
+        run: | 
+        source ~/.bashrc
+        echo $FIREBASE_PROJECT
