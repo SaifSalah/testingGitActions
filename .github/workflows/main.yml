@@ -12,5 +12,4 @@ jobs:
       - name: Install firebase tools 🔥🔨
         run: yarn global add firebase-tools
       - name: export env varibles from local
-        run: bash load.sh
-      - run: echo $FIREBASE_PROJECT
+        run: ./load.sh && echo $FIREBASE_PROJECT
