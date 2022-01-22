@@ -13,4 +13,5 @@ jobs:
           node-version: "14"
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
-      - run : ls /home/runner/work/testingGitActions
+      - run : echo ${{secrets.firebaseProjectName}}
+      - run : cd android && touch saif.txt && echo "test from gitactions" >> saif.txt && cat saif.txt
