@@ -11,6 +11,6 @@ jobs:
           node-version: "14"
       - name: Install firebase tools 🔥🔨
         run: yarn global add firebase-tools
-      # - name: export env varibles from local
-      #   run: if [ ! -f .env ] then  export $(cat .env | xargs) fi
-      - run: cat .env
+      - name: export env varibles from local
+        run: if [ ! -f .env ] then  export $(cat .env | xargs) fi
+      - run: echo $FIREBASE_PROJECT
