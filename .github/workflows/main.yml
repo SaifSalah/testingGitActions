@@ -11,6 +11,6 @@ jobs:
           node-version: "14"
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
-      - run: export $(cat .env | xargs)
+      - run: export $(cat .env >> ~/.bashrc | xargs)
       - run: echo $FIREBASE_PROJECT
       - run: echo $FIREBASE_TOKEN
