@@ -13,4 +13,4 @@ jobs:
           node-version: "14"
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
-      - run : ls /home/runner/work/testingGitActions
+      - run : ls /home/runner/work/
