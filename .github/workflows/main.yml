@@ -13,4 +13,4 @@ jobs:
           node-version: "14"
       - name: Install firebase tools 🔥🔨
         run: yarn global add firebase-tools
-      - run : pwd && whoami && ll
+      - run : pwd && whoami
