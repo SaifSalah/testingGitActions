@@ -14,5 +14,5 @@ jobs:
       - run: export $(cat .env >> ~/.bashrc | xargs)
       - name: get_env
         run: |
-        source ~/.bashrc
-        echo $FIREBASE_PROJECT
+          source ~/.bashrc
+          echo $FIREBASE_PROJECT
