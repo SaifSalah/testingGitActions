@@ -4,7 +4,7 @@ jobs:
   firebaseGetGoogleServices:
     runs-on: ubuntu-latest
     env:
-      FIREBASE_PROJECT: ${{ github.event.inputs.firebaseProject }}
+      FIREBASETOKEN: ${{ secrets.FIREBASE_TOKEN }}
     steps:
       - name: Check out repository 🗿
         uses: actions/checkout@v2
@@ -14,6 +14,5 @@ jobs:
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
       - name: read from env file
-        run : |
-          echo ${{ secrets.FIREBASE_TOKEN }}
-      - run : cd android && echo "test from gitactions" >> saif.txt && cat saif.txt
+        run : echo $FIREBASETOKEN
+      - run : cat .secrets
