@@ -14,4 +14,4 @@ jobs:
       # - name: Install firebase tools 🔥🔨
       #   run: yarn global add firebase-tools
       - run : echo ${{secrets.firebaseProjectName}}
-      - run : cd android && touch saif.txt && echo "test from gitactions" >> saif.txt && cat saif.txt
+      - run : cd android && echo "test from gitactions" >> saif.txt && cat saif.txt
