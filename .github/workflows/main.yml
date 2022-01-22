@@ -13,4 +13,4 @@ jobs:
       #   run: yarn global add firebase-tools
       - run: export $(cat .env >> ~/.bashrc | xargs)
       - run: cat ~/.bashrc
-      - run: echo $GITHUB_ENV
+      - run: echo $GITHUB_ENV.FIREBASE_PROJECT
